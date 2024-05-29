@@ -1,1 +1,26 @@
-<p>add-smartphone works!</p>
+<form>
+
+
+    <input [(ngModel)]="newSmartphone.marca" type="text" name="model" class="form-control">
+
+    <input [(ngModel)]="newSmartphone.modello" type="text" name="prezzo" class="form-control">
+
+
+
+
+    <select [(ngModel)]="newSmartphone.colore" name="disponibilità" class="form-control">
+        <option [value]="true">Disponibile</option>
+        <option [value]="false">Non Disponibile</option>
+
+
+
+
+
+    </select>
+
+    <button class="btn btn-succes" (click)="create()">Crea</button>
+
+
+</form>
+
+{{newSmartphone | json}}

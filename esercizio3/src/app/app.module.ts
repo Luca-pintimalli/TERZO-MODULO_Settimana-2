@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ModificaComponent } from './pages/modifica/modifica.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { AddSmartphoneComponent } from './pages/add-smartphone/add-smartphone.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddSmartphoneComponent } from './pages/add-smartphone/add-smartphone.co
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

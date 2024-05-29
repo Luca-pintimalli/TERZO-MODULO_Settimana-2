@@ -5,7 +5,7 @@
       <h5 class="card-title text-center">{{s.marca}}</h5>
       <p class="card-text">MODELLO:{{s.modello}}</p>
       <p class="card-text">COLORE:{{s.colore}}</p>
-      <button class="btn btn-primary">MODIFICA</button>
+      <button [routerLink]="['/modifica', s.id]" class="btn btn-primary">MODIFICA</button>
       <button (click)="deleteSmartphone(s.id)" class="btn btn-danger">ELIMINA</button>
 
     </div>

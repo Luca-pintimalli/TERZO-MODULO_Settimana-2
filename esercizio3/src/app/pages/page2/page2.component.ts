@@ -17,12 +17,20 @@ export class Page2Component {
     //così possiamo vedere nella pagina già i dati smartphone 
     this.smartphoneSvc.getAllSmartphone().subscribe( 
       smartphone => {this.smartphone = smartphone})
+
+
+
   }
 
   //GESTISTO L'OPZIONE DELETE DEL BOTTONE PER ELIMINARE LE CARD SMARTPHONE 
   deleteSmartphone(id:number){
     this.smartphoneSvc.delete(id).subscribe(smartphone => {
-    alert('smartphone eliminata')
+
+      this.smartphone = this.smartphone.filter(s => s.id != id)
+
+
+
+    alert('smartphone eliminato')
     })
   }
 
