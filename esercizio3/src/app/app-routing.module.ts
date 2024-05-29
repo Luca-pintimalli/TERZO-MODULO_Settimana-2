@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { Page2Component } from './pages/page2/page2.component';
 import { ModificaComponent } from './pages/modifica/modifica.component';
+import { AddSmartphoneComponent } from './pages/add-smartphone/add-smartphone.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'modifica/:id',
     component:ModificaComponent
+  },
+  {
+    path:'add-smartphone',
+    component:AddSmartphoneComponent
   },
 ];
 

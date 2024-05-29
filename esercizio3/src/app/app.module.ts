@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModificaComponent } from './pages/modifica/modifica.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { AddSmartphoneComponent } from './pages/add-smartphone/add-smartphone.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {  HttpClientModule } from '@angular/common/http';
     Page2Component,
     HeaderComponent,
     FooterComponent,
-    ModificaComponent
+    ModificaComponent,
+    AddSmartphoneComponent
   ],
   imports: [
     BrowserModule,

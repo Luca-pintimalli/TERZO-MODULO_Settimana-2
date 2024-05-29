@@ -1,1 +1,12 @@
-<p>page2 works!</p>
+<div class="card">
+    <div class="card-header">
+    </div>    
+    <div class="card-body" *ngFor="let s of smartphone">
+      <h5 class="card-title text-center">{{s.marca}}</h5>
+      <p class="card-text">MODELLO:{{s.modello}}</p>
+      <p class="card-text">COLORE:{{s.colore}}</p>
+      <button class="btn btn-primary">MODIFICA</button>
+      <button (click)="deleteSmartphone(s.id)" class="btn btn-danger">ELIMINA</button>
+
+    </div>
+  </div>

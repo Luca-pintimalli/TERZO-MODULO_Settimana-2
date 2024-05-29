@@ -1,0 +1,11 @@
+{
+  "smartphone": [
+    {
+      "id": 0,
+      "marca": "Apple",
+      "modello": "iPhone 30",
+      "colore": "white",
+      "disponibilità": true
+    }
+  ]
+}

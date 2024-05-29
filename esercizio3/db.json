@@ -1,11 +1,11 @@
 {
     "smartphone": [
-        {
-            "id": 0,
-            "marca": "iPhone",
-            "modello": 30,
+    {
+        "id": 0,
+            "marca": "Apple",
+            "modello": "iPhone 30",
             "colore": "white",
             "disponibilità": true
-        }
+    }
     ]
 }
